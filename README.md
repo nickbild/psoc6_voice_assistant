@@ -25,3 +25,21 @@ You will also need to select a model to perform the classifications. I chose a 1
 When ready, click the `Start New Training Job...` button. This job will run in the cloud, so it will not be eating up resources on your own machine, and you do not need to install any machine learning frameworks.
 
 After the training process finishes, you will be given metrics to help you evaluate which model works best for your application. Once you make your selection, download the `.h5` model file.
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/training_results.png)
+
+Now use the `Code Gen` tab to create representations of the model that can be deployed to the hardware.
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/code_gen.png)
+
+Finally, pivot over to ModusToolbox. Create a new project based on this [example project](https://bitbucket.org/imagimob/imagimob-deploy-code-example-psoc-edge/src/main/). After that, replace the files in the `models` folder of your new project with the `model.c` and `model.h` files produced by the `Code Gen` step. Now you can click on `Build Project` (you can also make any necessary code edits first in the Eclipse IDE).
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/eclipse.png)
+
+The last step is to click the button to deply your project. The predictions will be output via serial over USB, so I read that via my voice assistant Python script to determine when the wakeword was spoken.
+
+That's it! You've got your own offline LLM-based voice assistant.
+
+## About the Author
+
+[Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
