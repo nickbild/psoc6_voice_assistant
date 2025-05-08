@@ -1,1 +1,2 @@
-# psoc6_voice_assistant
+# Local LLM Voice Assistant
+
