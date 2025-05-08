@@ -4,7 +4,9 @@ I previous built an offline, LLM-based voice assistant ([details here](https://g
 
 I do not want to bog the system down with continually looking for a wakeword, so I decided to upgrade my voice assistant with an Infineon PSoC 6 Artificial Intelligence Evaluation Kit. In this way, the PSoC 6 can continually watch for a wakeword, and only trigger the voice assistant to jump into action when I am ready to make a request.
 
-The build of the voice assistant is already [documented here](https://github.com/nickbild/local_llm_assistant), so I won't cover that again. I will just note that the `chatbot.py` script needs to be updated with [this version](https://github.com/nickbild/psoc6_voice_assistant/blob/main/chatbot.py) to interact with the PSoC 6, rather than a push button. That said, I will focus on how I got the PSoC 6 to do wakeword detection for the voice assistant.
+The build of the voice assistant is already [documented here](https://github.com/nickbild/local_llm_assistant), so I won't cover that again. I will just note that the `chatbot.py` script needs to be updated with [this version](https://github.com/nickbild/psoc6_voice_assistant/blob/main/chatbot.py) to interact with the PSoC 6, rather than a push button. That said, I will focus on how I got the PSoC 6 to do wakeword detection for the voice assistant. But first, here is a demo of the project in action:
+
+<a href="https://www.youtube.com/watch?v=sobiO6CeT20">![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/full_setup.jpg)</a>
 
 ## Building a Machine Learning Model for the PSoC 6
 
