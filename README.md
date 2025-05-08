@@ -6,3 +6,22 @@ I do not want to bog the system down with continually looking for a wakeword, so
 
 The build of the voice assistant is already [documented here](https://github.com/nickbild/local_llm_assistant), so I won't cover that again. I will just note that the `chatbot.py` script needs to be updated with [this version](https://github.com/nickbild/psoc6_voice_assistant/blob/main/chatbot.py) to interact with the PSoC 6, rather than a push button. That said, I will focus on how I got the PSoC 6 to do wakeword detection for the voice assistant.
 
+## Building a Machine Learning Model for the PSoC 6
+
+First, make sure that your dev board has already been flashed with the streaming firmware. There is additional information about that [here](https://developer.imagimob.com/getting-started/infineon-ai-evaluation-kit). Once that has been sorted out, you will need to install and launch DEEPCRAFT Studio. Create a [new data collection project](https://developer.imagimob.com/data-preparation/data-collection/data-collection-using-new-streaming-firmware), then configure it to collect data from the microphone using the drag-and-drop graphical interface. Here is one of my recording sessions after I lableled the data:
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/data_collection.png)
+
+Once you have the data prepared, you can create new classification project, then add the data to it:
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/add_data.png)
+
+Be sure to click the `Redistribute Sets...` button to split the data between training, validation, and testing sets.
+
+You will also need to select a model to perform the classifications. I chose a 1D convolutional LSTM network.
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/model.png)
+
+When ready, click the `Start New Training Job...` button. This job will run in the cloud, so it will not be eating up resources on your own machine, and you do not need to install any machine learning frameworks.
+
+After the training process finishes, you will be given metrics to help you evaluate which model works best for your application. Once you make your selection, download the `.h5` model file.
