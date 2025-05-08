@@ -1,0 +1,47 @@
+20:56:14 **** Incremental Build of configuration Debug for project deploy_audio_classify ****
+"C:\\Users\\vboxuser\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/vboxuser/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/vboxuser/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/vboxuser/ModusToolbox/tools_3.3 /cygdrive/c/Users/vboxuser/ModusToolbox/tools_3.4 C:/Users/vboxuser/ModusToolbox/tools_3.3 C:/Users/vboxuser/ModusToolbox/tools_3.4". This build is currently using "C:/Users/vboxuser/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/vboxuser/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-ml-deepcraft-deploy-audio Debug APP_CY8CKIT-062S2-AI GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/vboxuser/Documents/deepcraft/deploy/deploy_audio_classify'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file C:/Users/vboxuser/Documents/deepcraft/deploy/deploy_audio_classify/build/Debug/local/main.o
+[2/2] Linking, creating elf file build/APP_CY8CKIT-062S2-AI/Debug/mtb-example-ml-deepcraft-deploy-audio.elf
+C:/Users/vboxuser/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/vboxuser/Documents/deepcraft/deploy/deploy_audio_classify/build/APP_CY8CKIT-062S2-AI/Debug/mtb-example-ml-deepcraft-deploy-audio.elf C:/Users/vboxuser/Documents/deepcraft/deploy/deploy_audio_classify/build/APP_CY8CKIT-062S2-AI/Debug/mtb-example-ml-deepcraft-deploy-audio.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C624ABZI-S2D44 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  6352       | 
+  | .text                |  0x10002000   |  355432     | 
+  | .ARM.exidx           |  0x10058c68   |  8          | 
+  | .copy.table          |  0x10058c70   |  24         | 
+  | .zero.table          |  0x10058c88   |  8          | 
+  | .data                |  0x080022e0   |  1672       | 
+  | .cy_sharedmem        |  0x08002968   |  8          | 
+  | .noinit              |  0x08002970   |  228        | 
+  | .bss                 |  0x08002a60   |  104716     | 
+  | .heap                |  0x0801c370   |  926864     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          2097152    
+  Total Internal Flash (Utilized)           365344     
+
+
+20:56:19 Build Finished. 0 errors, 0 warnings. (took 5s.37ms)
+

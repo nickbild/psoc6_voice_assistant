@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.cypress.studio.feature:3.4.0"/>
+		<item value="org.eclipse.cdt.build.crossgcc:11.2.0.202304191745"/>
+		<item value="org.eclipse.cdt.debug.gdbjtag:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.debug.ui.memory:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.gdb.source:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.gdb:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.gnu.build.source:11.2.0.202304211730"/>
+		<item value="org.eclipse.cdt.gnu.build:11.2.0.202304211730"/>
+		<item value="org.eclipse.cdt.gnu.debug.source:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.gnu.debug:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.gnu.dsf.source:11.2.0.202304102232"/>
+		<item value="org.eclipse.cdt.gnu.dsf:11.2.0.202304102232"/>
+		<item value="org.eclipse.cdt.launch.remote:11.2.0.202303140100"/>
+		<item value="org.eclipse.cdt.native.source:11.2.0.202306051917"/>
+		<item value="org.eclipse.cdt.native:11.2.0.202306051917"/>
+		<item value="org.eclipse.cdt.platform.source:11.2.0.202306051917"/>
+		<item value="org.eclipse.cdt.platform:11.2.0.202306051917"/>
+		<item value="org.eclipse.cdt.sdk:11.2.0.202306051917"/>
+		<item value="org.eclipse.cdt:11.2.0.202306051917"/>
+		<item value="org.eclipse.egit:6.6.0.202305301015-r"/>
+		<item value="org.eclipse.embedcdt.debug.gdbjtag.jlink:6.3.2.202304281106"/>
+		<item value="org.eclipse.embedcdt.debug.gdbjtag.openocd:6.3.2.202304281106"/>
+		<item value="org.eclipse.embedcdt.debug.gdbjtag.pyocd:6.3.2.202304281106"/>
+		<item value="org.eclipse.embedcdt.debug.gdbjtag:6.3.2.202304281106"/>
+		<item value="org.eclipse.embedcdt.managedbuild.cross.arm:6.3.2.202304281106"/>
+		<item value="org.eclipse.emf.common:2.29.0.v20230315-1321"/>
+		<item value="org.eclipse.emf.ecore:2.32.0.v20230406-1203"/>
+		<item value="org.eclipse.help:2.3.1400.v20230605-0440"/>
+		<item value="org.eclipse.jgit.gpg.bc:6.6.0.202305301015-r"/>
+		<item value="org.eclipse.jgit.http.apache:6.6.0.202305301015-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:6.6.0.202305301015-r"/>
+		<item value="org.eclipse.jgit:6.6.0.202305301015-r"/>
+		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.46.202301111837"/>
+		<item value="org.eclipse.mylyn.wikitext_feature:3.0.46.202301111837"/>
+		<item value="org.eclipse.platform:4.28.0.v20230605-0440"/>
+		<item value="org.eclipse.rcp:4.28.0.v20230605-0440"/>
+		<item value="org.eclipse.remote:11.2.0.202303140100"/>
+	</list>
+</section>

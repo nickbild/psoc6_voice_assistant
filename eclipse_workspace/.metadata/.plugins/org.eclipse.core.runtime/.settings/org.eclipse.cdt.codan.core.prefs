@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+org.eclipse.cdt.codan.internal.checkers.TypeResolutionProblem=-Error
+org.eclipse.cdt.codan.internal.checkers.VariableResolutionProblem=-Error
+useParentScope=false

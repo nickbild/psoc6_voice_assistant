@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Imaginet version="2.0.0.0">
+  <Compound unit="e2e038a0-e281-4de4-a43c-355bd5afec8d">
+    <Nodes>
+      <DeviceNode id="node_4" x="520.5713105640092" y="611.1824323964424" enabled="true" name="Microphone" board="290de5cb-460b-41bf-31cb-8c012f0daff5" boardName="PSoC 6 AI (CY8CKIT-06S2-AI)" device="0" />
+      <UnitNode id="node_5" x="874.6946138951537" y="677.3373352165463" enabled="true" name="Microphone Data" unit="ImagimobStudio.Modules.DataTrack" />
+      <LabelListNode id="node_7" width="120" height="120" x="883.370891355048" y="461.7328133821195" enabled="true" name="Predefined Labels">
+        <Label>background</Label>
+        <Label>wake</Label>
+      </LabelListNode>
+    </Nodes>
+    <Connections>
+      <Connection>
+        <Source node="node_4" param="Audio" />
+        <Target node="node_5" param="data" />
+      </Connection>
+    </Connections>
+  </Compound>
+</Imaginet>

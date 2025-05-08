@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify Attach (KitProg3_MiniProg4),org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify Debug (KitProg3_MiniProg4),org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify Erase Device (KitProg3_MiniProg4),org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify Program (KitProg3_MiniProg4)
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify\ Attach\ (KitProg3_MiniProg4)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:deploy_audio_classify\ Attach\ (KitProg3_MiniProg4)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
