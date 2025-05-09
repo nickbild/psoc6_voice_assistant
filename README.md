@@ -1,6 +1,6 @@
 # Local LLM Voice Assistant
 
-I previous built an offline, LLM-based voice assistant ([details here](https://github.com/nickbild/local_llm_assistant)). It works quite well, but it has one problem — you have to press a button to ask it a question. That is inconvenient and does not go well with the whole concept of a voice assistant.
+I previously built an offline, LLM-based voice assistant ([details here](https://github.com/nickbild/local_llm_assistant)). It works quite well, but it has one problem — you have to press a button to ask it a question. That is inconvenient and does not go well with the whole concept of a voice assistant.
 
 I do not want to bog the system down with continually looking for a wakeword, so I decided to upgrade my voice assistant with an Infineon PSoC 6 Artificial Intelligence Evaluation Kit. In this way, the PSoC 6 can continually watch for a wakeword, and only trigger the voice assistant to jump into action when I am ready to make a request.
 
@@ -10,7 +10,7 @@ The build of the voice assistant is already [documented here](https://github.com
 
 ## Building a Machine Learning Model for the PSoC 6
 
-First, make sure that your dev board has already been flashed with the streaming firmware. There is additional information about that [here](https://developer.imagimob.com/getting-started/infineon-ai-evaluation-kit). Once that has been sorted out, you will need to install and launch DEEPCRAFT Studio. Create a [new data collection project](https://developer.imagimob.com/data-preparation/data-collection/data-collection-using-new-streaming-firmware), then configure it to collect data from the microphone using the drag-and-drop graphical interface. Here is one of my recording sessions after I lableled the data:
+First, make sure that your dev board has already been flashed with the streaming firmware. There is additional information about that [here](https://developer.imagimob.com/getting-started/infineon-ai-evaluation-kit). Once that has been sorted out, you will need to install and launch DEEPCRAFT Studio. Create a [new data collection project](https://developer.imagimob.com/data-preparation/data-collection/data-collection-using-new-streaming-firmware), then configure it to collect data from the microphone using the drag-and-drop graphical interface. Here is one of my recording sessions after I labeled the data:
 
 ![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/data_collection.png)
 
@@ -38,7 +38,7 @@ Finally, pivot over to ModusToolbox. Create a new project based on this [example
 
 ![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/eclipse.png)
 
-The last step is to click the button to deply your project. The predictions will be output via serial over USB, so I read that via my voice assistant Python script to determine when the wakeword was spoken.
+The last step is to click the button to deploy your project. The predictions will be output via serial over USB, so I read that via my voice assistant Python script to determine when the wakeword was spoken.
 
 That's it! You've got your own offline LLM-based voice assistant, with this little board doing the tough job of continuous wakeword detection:
 
