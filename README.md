@@ -40,7 +40,9 @@ Finally, pivot over to ModusToolbox. Create a new project based on this [example
 
 The last step is to click the button to deply your project. The predictions will be output via serial over USB, so I read that via my voice assistant Python script to determine when the wakeword was spoken.
 
-That's it! You've got your own offline LLM-based voice assistant.
+That's it! You've got your own offline LLM-based voice assistant, with this little board doing the tough job of continuous wakeword detection:
+
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/dev_board.png)
 
 ## About the Author
 
