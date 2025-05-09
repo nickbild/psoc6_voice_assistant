@@ -42,7 +42,7 @@ The last step is to click the button to deply your project. The predictions will
 
 That's it! You've got your own offline LLM-based voice assistant, with this little board doing the tough job of continuous wakeword detection:
 
-![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/dev_board.png)
+![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/dev_board.jpg)
 
 ## About the Author
 
