@@ -14,7 +14,7 @@ First, make sure that your dev board has already been flashed with the streaming
 
 ![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/data_collection.png)
 
-Once you have the data prepared, you can create new classification project, then add the data to it:
+Once you have the data prepared, you create a new classification project, then add the data to it:
 
 ![](https://raw.githubusercontent.com/nickbild/psoc6_voice_assistant/refs/heads/main/media/add_data.png)
 
